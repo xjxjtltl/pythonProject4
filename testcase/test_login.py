@@ -14,7 +14,7 @@ yaml_read = yaml.yaml_read() or {}
 @pytest.mark.run(order=1)
 @pytest.mark.parametrize("data", [Yaml_Ulit(r"D:\pythonProject4\testcase\login.yaml").yaml_read()])
 def test_login(data):
-    url = 'http://a.uzxue.cn/api1/connect/token'
+    url = 'http://a.uzxue.cn/api1/connect/token2'
     data = {
         'grant_type': data['grant_type'],
         'client_id': data['client_id'],
